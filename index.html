@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
     <title>Stocks</title>
 </head>
+
 <body>
-    <h1>Stock Profit & Loss Calculator</h1>
-    <label for="initial-price">Intial Price</label>
-    <input type="number" id="initial-price" placeholder="Intial Price of Stocks">
-    <label for="stocks-quantity">Quantity of Stocks</label>
-    <input type="number" id="stocks-quantity" placeholder="Number of Stocks Bought">
-    <label for="current-price">Current Price</label>
-    <input type="number" id="current-price" placeholder="Current Price of Stocks"> 
-    <button id="submit-btn">Tell Me!!</button>
-    <div id="output-box"></div>
+    <div class="container">
+        <h1>Stock Profit & Loss Calculator</h1>
+        <label for="initial-price">Intial Price</label>
+        <input type="number" id="initial-price">
+        <label for="stocks-quantity">Quantity of Stocks</label>
+        <input type="number" id="stocks-quantity">
+        <label for="current-price">Current Price</label>
+        <input type="number" id="current-price">
+        <button id="submit-btn">Tell Me!!</button>
+        <div id="output-box"></div>
+    </div>
     <script src="/app.js"></script>
 </body>
+
 </html>
