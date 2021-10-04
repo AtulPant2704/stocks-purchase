@@ -10,10 +10,10 @@ function submitHandler() {
     var ip = Number(initialPrice.value);
     var qty = Number(stocksQuantity.value);
     var curr = Number(currentPrice.value);
-    if(ip && qty && curr){
+    if(ip && qty && curr && ip>0 && qty>0 && curr>0){
         calculateProfitAndLoss(ip, qty, curr);
     }else{
-        outputBox.innerText = `Please enter all the fields.`
+        outputBox.innerText = `Please enter all the fields in positive value.`
     }
 }
 
